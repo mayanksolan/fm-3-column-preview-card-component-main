@@ -1,0 +1,91 @@
+body {
+  height: 100vh;
+  margin: 0;
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 15px;
+}
+.card-wrapper {
+  width: 90%;
+  margin: 150px auto;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.card {
+  display: flex;
+  justify-content: center;
+}
+.commons {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+}
+.sedans {
+  background-color: #e28525;
+}
+.suvs {
+  background-color: #016972;
+}
+.luxury {
+  background-color: #00413f;
+}
+.common-card {
+  padding: 50px;
+  color: hsla(0, 0%, 100%, 0.75);
+}
+.common-card h1 {
+  font-family: "Big-Shoulders-Display", cursive;
+}
+.common-card .content {
+  color: hsl(0, 0%, 95%);
+  font-size: 14px;
+  line-height: 24px;
+}
+.common-card .button-box {
+  outline: none;
+  border-style: none;
+  margin-top: 70px;
+  border-radius: 25px;
+  padding: 10px 30px;
+  background-color: hsl(0, 0%, 95%);
+  font-size: 1rem;
+  cursor: pointer;
+}
+.common-card .button-box:hover {
+  border: 2px solid hsl(0, 0%, 95%);
+  color: hsl(0, 0%, 95%);
+}
+.sedans-button {
+  color: #e28525;
+}
+.common-card .sedans-button:hover {
+  background-color: #e28525;
+}
+.suvs-button {
+  color: #016972;
+}
+.common-card .suvs-button:hover {
+  background-color: #016972;
+}
+.luxury-button {
+  color: #00413f;
+}
+.common-card .luxury-button:hover {
+  background-color: #00413f;
+}
+
+@media only screen and (max-width: 500px) {
+  .card-wrapper {
+    width: 90%;
+    align-items: center;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 50px auto;
+  }
+  .card {
+    flex-direction: column;
+  }
+}
